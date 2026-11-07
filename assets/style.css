@@ -1,0 +1,168 @@
+/* Free Culture & Outdoors Directory
+   System fonts only. No web fonts, no tracking, no JavaScript. */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #555;
+  --link: #0b5cad;
+  --link-visited: #5b3d8a;
+  --bg: #fdfcfa;
+  --panel: #f2efe9;
+  --border: #d8d3ca;
+  --accent: #2b6a3a;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+header.site-header {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.25rem 0 1rem;
+  border-bottom: 4px double var(--border);
+}
+
+.site-title {
+  margin: 0 0 .5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.site-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-title a:hover,
+.site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .95rem;
+  font-size: .95rem;
+}
+
+.site-nav a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 1.25rem 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: .2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.35rem;
+}
+
+p, ul, ol, table {
+  margin: 0 0 1rem;
+}
+
+li { margin-bottom: .3rem; }
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  padding: .75rem 1rem;
+  background: var(--panel);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+
+blockquote p { margin: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: .45rem .6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: var(--panel);
+  border-bottom: 2px solid var(--border);
+}
+
+table a {
+  word-break: break-word;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .88em;
+  background: var(--panel);
+  padding: .1em .3em;
+  border-radius: 3px;
+}
+
+footer.site-footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem;
+  border-top: 4px double var(--border);
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+footer.site-footer p { margin-bottom: .5rem; }
+
+footer.site-footer a {
+  color: var(--muted);
+}
+
+@media (max-width: 500px) {
+  body { padding: 0 .75rem; font-size: 1rem; }
+  table { font-size: .85rem; }
+  th, td { padding: .35rem .35rem; }
+}
